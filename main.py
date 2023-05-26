@@ -1,5 +1,4 @@
-import variables
-import methods
+import variables, methods, loops
 
 def main():
 	print("Python Main Method")
@@ -7,4 +6,5 @@ def main():
 if __name__=="__main__":
 	main()
 	methods.start()
-	variables.start()	
+	variables.start()
+	loops.start()
