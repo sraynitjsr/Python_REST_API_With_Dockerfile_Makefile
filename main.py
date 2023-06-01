@@ -1,4 +1,4 @@
-import variables, methods, loops, inputoutput, list, tuple
+import variables, methods, loops, inputoutput, list, tuple, lambdas
 
 def main():
 	print("Python Main Method")
@@ -11,3 +11,4 @@ if __name__=="__main__":
 	inputoutput.start()
 	list.start()
 	tuple.start()
+	lambdas.start()
