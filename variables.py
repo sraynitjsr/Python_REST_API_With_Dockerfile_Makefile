@@ -5,3 +5,6 @@ def start():
     myString = "Virus_Ray"
     print(myFraction)
     print(myString)
+
+    a = b = c = 1
+    print('a=', a, 'b=', b, 'c=', c)
