@@ -1,4 +1,4 @@
-def simple():
+def dataTypes():
     myInteger = 4635
     myFraction = 35.46
     myString = "Virus_Ray"
@@ -8,7 +8,6 @@ def simple():
     a = b = c = 1
     print('a=', a, 'b=', b, 'c=', c)
 
-def stringDataTypes():
     str = 'Hello World'
     print('String =>', str)
     print('First Character =>', str[0])
@@ -20,5 +19,4 @@ def stringDataTypes():
 
 def start():
     print('Inside Variables')
-    simple()
-    stringDataTypes()
+    dataTypes()
