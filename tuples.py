@@ -11,5 +11,9 @@ def start():
     print ('Tuple Concatenation', tuple1 + tuple2)
     
     myTuple = (123, -456, 789)
-    print ("Max value element => ", max(myTuple))
-    print ("Min value element => ", min(myTuple))
+    print ("Max value element =>", max(myTuple))
+    print ("Min value element =>", min(myTuple))
+
+    myList = [123, 'abc']
+    myConvertedTuple = tuple(myList)
+    print ("Tuple Data =>", myConvertedTuple, 'For The List', myList)
