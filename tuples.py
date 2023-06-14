@@ -9,4 +9,7 @@ def start():
     print ('Tuple Elements From Index 2 to Last', tuple1[2:])
     print ('Print Tuple Twice', tuple2 * 2)
     print ('Tuple Concatenation', tuple1 + tuple2)
-   
+    
+    myTuple = (123, -456, 789)
+    print ("Max value element => ", max(myTuple))
+    print ("Min value element => ", min(myTuple))
