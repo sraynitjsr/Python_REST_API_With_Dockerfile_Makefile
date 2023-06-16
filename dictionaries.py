@@ -8,3 +8,10 @@ def start():
     print('After Updating Value for B', my_dict)
     del my_dict["C"]
     print('After Deleting Key C, Full Dictionary =>', my_dict)
+    my_dict["X"] = 4040
+    my_dict["Y"] = 5050
+    my_dict["Z"] = 6060
+    for k, v in my_dict.items():
+        if k == "Y":
+            print ('Found Y with Value', v)
+            break
