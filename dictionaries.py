@@ -6,3 +6,5 @@ def start():
     print('After Adding C', my_dict)
     my_dict["B"] = 2020
     print('After Updating Value for B', my_dict)
+    del my_dict["C"]
+    print('After Deleting Key C, Full Dictionary =>', my_dict)
