@@ -9,3 +9,8 @@ def start():
     print ('List Elements From Index 2 to Last', list1[2:])
     print ('Print List Twice', list2 * 2)
     print ('List Concatenation', list1 + list2)
+
+    myList = [100, 300, 200, 500, 400]
+    print ('Unsorted List =>', myList)
+    myList.sort(reverse=True)
+    print ('Sorted List =>', myList)
