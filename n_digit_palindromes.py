@@ -20,5 +20,5 @@ def printPalindromes(d):
 			print(i, end = " ")
 
 def start():
-	print('Inside Generating N Digit Palindromes, Here N = 3')
+	print('Inside Generating N Digit Palindrome Numbers, Here N = 3')
 	printPalindromes(3)
