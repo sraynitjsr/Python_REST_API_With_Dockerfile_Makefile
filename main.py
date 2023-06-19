@@ -1,4 +1,4 @@
-import variables, lists, tuples, dictionaries, number_palindrome
+import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes
 
 def main():
 	print("Inside Python Main Method")
@@ -20,4 +20,7 @@ if __name__=="__main__":
 	print()
 
 	number_palindrome.start()
+	print()
+
+	n_digit_palindromes.start()
 	print()
