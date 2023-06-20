@@ -1,4 +1,4 @@
-import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes, sum_of_digits, multi_threading
+import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes, sum_of_digits, multi_threading, odd_even
 
 def main():
 	print("Inside Python Main Method")
@@ -29,4 +29,7 @@ if __name__=="__main__":
 	print()
 
 	multi_threading.start()
+	print()
+
+	odd_even.start()
 	print()
