@@ -1,4 +1,4 @@
-import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes, sum_of_digits
+import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes, sum_of_digits, multi_threading
 
 def main():
 	print("Inside Python Main Method")
@@ -26,4 +26,7 @@ if __name__=="__main__":
 	print()
 
 	sum_of_digits.start()
+	print()
+
+	multi_threading.start()
 	print()
