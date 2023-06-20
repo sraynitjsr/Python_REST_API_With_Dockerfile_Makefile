@@ -1,16 +1,16 @@
 import threading
 
-def task():
+def task(value):
     # Code to be executed in the thread
-    print("Thread critical section")
+    print("Thread is executing with value:", value)
     
 def start():
     print('Inside Multi Threading Using Python')
 
     # Create multiple threads
     threads = []
-    for _ in range(5):
-        t = threading.Thread(target=task)
+    for i in range(5):
+        t = threading.Thread(target=lambda val: task(val), args=(i,))
         threads.append(t)
         t.start()
 
