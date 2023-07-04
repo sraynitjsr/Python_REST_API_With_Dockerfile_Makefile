@@ -1,8 +1,15 @@
 def printPairs(arr, n, sum):
-	for i in range(0, n):
-		for j in range(i + 1, n):
-			if (arr[i] + arr[j] == sum):
-				print(arr[i], " ", arr[j], sep="")
+	mydict = dict()
+	for i in range(n):
+		temp = sum - arr[i]
+		if temp in mydict:
+			count = mydict[temp]
+			for j in range(count):
+				print(temp, " ", arr[i], sep="")
+		if arr[i] in mydict:
+			mydict[arr[i]] += 1
+		else:
+			mydict[arr[i]] = 1
 
 def start():
     print('Inside Pair Sum Problem')
