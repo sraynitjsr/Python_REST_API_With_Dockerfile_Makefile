@@ -1,4 +1,4 @@
-import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes, sum_of_digits, multi_threading, odd_even, yang_python, yang_parsing
+import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes, sum_of_digits, multi_threading, odd_even, yang_python, yang_parsing, pair_sum
 
 def main():
 	print("Inside Python Main Method")
@@ -38,4 +38,7 @@ if __name__=="__main__":
 	print()
 
 	yang_parsing.start()
+	print()
+
+	pair_sum.start()
 	print()
