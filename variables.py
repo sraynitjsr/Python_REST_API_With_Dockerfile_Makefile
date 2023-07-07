@@ -11,3 +11,6 @@ def start():
 
     x,y,z = 1,2.3,"Ray2020"
     print("Multiple Assignment of Different Types in One Statement =>", x, y, z)
+
+    print("Deleting Variables or Their References in Python")
+    del age, name, name, a, b, c, x, y, z
