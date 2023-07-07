@@ -1,44 +1,5 @@
-import variables, lists, tuples, dictionaries, number_palindrome, n_digit_palindromes, sum_of_digits, multi_threading, odd_even, yang_python, yang_parsing, pair_sum
-
 def main():
 	print("Inside Python Main Method")
 
 if __name__=="__main__":
 	main()
-	print()
-	
-	variables.start()
-	print()
-	
-	lists.start()
-	print()
-
-	tuples.start()
-	print()
-
-	dictionaries.start()
-	print()
-
-	number_palindrome.start()
-	print()
-
-	n_digit_palindromes.start()
-	print()
-
-	sum_of_digits.start()
-	print()
-
-	multi_threading.start()
-	print()
-
-	odd_even.start()
-	print()
-
-	yang_python.start()
-	print()
-
-	yang_parsing.start()
-	print()
-
-	pair_sum.start()
-	print()
