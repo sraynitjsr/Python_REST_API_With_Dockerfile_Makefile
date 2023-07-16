@@ -14,29 +14,17 @@ person2 = Person("Joy", 25)
 person1.display()
 person2.display()
 
-class Animal:
-    def __init__(self, name):
-        self.name = name
-    
-    def speak(self):
-        print("The animal makes a sound.")
+class Parent:
+    def parent_method(self):
+        print("Parent method")
 
-class Dog(Animal):
-    def speak(self):
-        print("Woof!")
+class Child(Parent):
+    def child_method(self):
+        print("Child method")
 
-class Cat(Animal):
-    def speak(self):
-        print("Meow!")
-
-dog = Dog("Buddy")
-cat = Cat("Whiskers")
-
-dog.speak()
-cat.speak()
-
-print(dog.name)
-print(cat.name)
+child_obj = Child()
+child_obj.parent_method()
+child_obj.child_method()
 
 class Parent1:
     def method1(self):
@@ -53,4 +41,21 @@ class Child(Parent1, Parent2):
 child_obj = Child()
 child_obj.method1()
 child_obj.method2()
+child_obj.child_method()
+
+class Grandparent:
+    def grandparent_method(self):
+        print("Grandparent method")
+
+class Parent(Grandparent):
+    def parent_method(self):
+        print("Parent method")
+
+class Child(Parent):
+    def child_method(self):
+        print("Child method")
+
+child_obj = Child()
+child_obj.grandparent_method()
+child_obj.parent_method()
 child_obj.child_method()
