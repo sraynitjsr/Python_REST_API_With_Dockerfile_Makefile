@@ -1,24 +1,26 @@
-# Define a simple class called "Person"
-class Person:
-    # Constructor method to initialize the object with a name and age
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+from abc import ABC, abstractmethod
 
-    # Method to display information about the person
-    def display_info(self):
-        print(f"Name=> {self.name}, Age=> {self.age}")
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
 
-# Define a main function for the script
-def main():
-    # Create instances of the Person class
-    person1 = Person("A", 25)
-    person2 = Person("B", 50)
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
 
-    # Access and display information about the persons
-    person1.display_info()
-    person2.display_info()
+    def area(self):
+        return 3.14159 * self.radius ** 2
 
-# Check if the script is run directly (not imported as a module)
-if __name__ == "__main__":
-    main()
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+shapes = [Circle(5), Rectangle(4, 6)]
+
+for shape in shapes:
+    print("Area =>", shape.area())
