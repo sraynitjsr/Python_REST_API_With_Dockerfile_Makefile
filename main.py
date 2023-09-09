@@ -1,26 +1,15 @@
-from abc import ABC, abstractmethod
+from flask import Flask, request, jsonify
 
-class Shape(ABC):
-    @abstractmethod
-    def area(self):
-        pass
+app = Flask(__name__)
 
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
+tasks = [
+    {"id": 1, "title": "Task 1", "done": False},
+    {"id": 2, "title": "Task 2", "done": False},
+]
 
-    def area(self):
-        return 3.14159 * self.radius ** 2
+@app.route('/tasks', methods=['GET'])
+def get_tasks():
+    return jsonify({'tasks': tasks})
 
-class Rectangle(Shape):
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
-
-    def area(self):
-        return self.length * self.width
-
-shapes = [Circle(5), Rectangle(4, 6)]
-
-for shape in shapes:
-    print("Area =>", shape.area())
+if __name__ == '__main__':
+    app.run(debug=True)
