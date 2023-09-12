@@ -6,7 +6,7 @@ replicaCount: 2
 
 service:
   name: hello-world-svc
-  type: NodePort
+  type: NodePort // Use http://<minikube-ip>:<node-port> for accessing the hello-world-svc
   port: 80
   targetPort: 8080
 
