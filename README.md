@@ -9,3 +9,9 @@
 
 # Save Docker Image
 ## sudo docker save -o hello-world-img.tar hello-world-python
+
+# Makefile Build
+## sudo make build
+
+# Makefile Run
+## sudo make run
