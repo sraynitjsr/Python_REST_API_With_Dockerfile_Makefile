@@ -2,6 +2,8 @@
 ## sudo docker build -t hello-world-img .
 ## sudo docker run -d --name hello-world-container hello-world-img sleep infinity
 ## sudo docker exec -it hello-world-container /bin/sh
+## sudo apt install curl -y
+## curl http://localhost:8080/helloWorld
 ## sudo docker save -o hello-world-img.tar hello-world-python
 
 # Option Two, Automated With Makefile
