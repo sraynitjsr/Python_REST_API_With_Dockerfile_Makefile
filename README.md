@@ -1,8 +1,8 @@
 # Build Image
-## docker build -t hello-world-python .
+## docker build -t hello-world-img .
 
 # Run Image
-## docker run -d hello-world-python sleep infinity
+## docker run -d hello-world-container sleep infinity
 
 # Save Docker Image
-## docker save -o hello-world-python.tar hello-world-python
+## docker save -o hello-world-img.tar hello-world-python
