@@ -1,5 +1,5 @@
 image:
-  repository: your-docker-repo/hello-world-img
+  repository: hello-world-img
   tag: latest
 
 replicaCount: 2
