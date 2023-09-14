@@ -2,11 +2,11 @@ image:
   repository: hello-world-img
   tag: latest
 
-replicaCount: 2
+replicaCount: 20
 
 service:
   name: hello-world-svc
-  type: NodePort // Use http://<minikube-ip>:<node-port> for accessing the hello-world-svc
+  type: NodePort
   port: 80
   targetPort: 8080
 
